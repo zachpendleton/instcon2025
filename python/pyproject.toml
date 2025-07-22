@@ -1,0 +1,11 @@
+[project]
+name = "python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.39.9",
+    "fastapi[standard]>=0.116.1",
+    "requests>=2.32.4",
+]
