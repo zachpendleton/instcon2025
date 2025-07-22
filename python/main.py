@@ -79,8 +79,8 @@ async def create_completion(request: CompletionRequest):
         
         # Prepare system prompt if provided
         system_messages = []
-        if request.system_prompt:
-            system_messages = [{"text": request.system_prompt}]
+        if request.system:
+            system_messages = [{"text": request.system}]
         
         # Prepare inference configuration
         inference_config = {
@@ -123,8 +123,8 @@ async def create_chat(request: ChatRequest):
         
         # Prepare system prompt if provided
         system_messages = []
-        if request.system_prompt:
-            system_messages = [{"text": request.system_prompt}]
+        if request.system:
+            system_messages = [{"text": request.system}]
         
         # Prepare inference configuration
         inference_config = {
@@ -168,8 +168,8 @@ async def create_streaming_chat(request: ChatRequest):
             
             # Prepare system prompt if provided
             system_messages = []
-            if request.system_prompt:
-                system_messages = [{"text": request.system_prompt}]
+            if request.system:
+                system_messages = [{"text": request.system}]
             
             # Prepare inference configuration
             inference_config = {
